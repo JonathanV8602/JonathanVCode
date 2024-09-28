@@ -1,0 +1,24 @@
+main{
+    background-color: saddlebrown;
+  }
+  
+  
+  header{
+    background-color: peru;
+  }
+  
+  
+  body{
+    background-color: maroon;
+    color: moccasin;
+  }
+  
+  @media (max-width: 750px) {
+    body {
+      background-color: peru;
+    }
+  }
+  h5 {
+    font-size: 25px;
+    font-weight: bold;
+    }

@@ -1,0 +1,22 @@
+main{
+  background-color: saddlebrown;
+}
+
+
+
+
+body{
+  background-color: maroon;
+  color: moccasin;
+}
+
+@media (max-width: 750px) {
+  body {
+    background-color: peru;
+  }
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
