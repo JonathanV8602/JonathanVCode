@@ -1,0 +1,97 @@
+/* This is for big screen */
+body {
+  background-color: #ece2b1
+  ; 
+  color: #151618;
+}
+
+main {
+  background-color: #556b2f; 
+}
+
+/* This is for small screen*/
+@media (max-width: 750px) {
+  body {
+    background-color: #efe4d4; 
+  }
+
+  main {
+    background-color: #b07946; 
+  }
+}
+
+/* Making images sync with moving the screen small or large*/
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Making the list look nice */
+h5 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  font-style: italic;
+  margin-left: 15px;
+}
+
+/* This is for the main body of the page and styling */
+.menu-heading {
+  font-family: "Brush Script MT", cursive, sans-serif; 
+  text-align: center; 
+  font-size: 2.5em; 
+  color: #2C3E50; 
+  margin-top: 50px; 
+}
+
+.menu-container {
+  background-color: #f8f5b3; 
+  width: 80%;
+  margin: 0 auto; 
+  padding: 20px;
+  border-radius: 10px; 
+}
+
+/* This is the allergy font and color */
+.allergy-info {
+    font-family: "Brush Script MT", cursive, sans-serif; 
+    font-size: 2em; 
+    color: #ff0000; 
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+
+/* Styling the navigation links */
+nav a {
+  color: #027500; 
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+nav a:hover {
+  color: #FF5733; 
+}
+
+nav a:visited {
+  color: #fa0404; 
+}
+
+nav a:active {
+  color: #900C3F; 
+}

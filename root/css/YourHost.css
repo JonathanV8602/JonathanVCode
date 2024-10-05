@@ -1,0 +1,76 @@
+/* Large screen styles */
+body {
+  background-color: #a9a454; 
+  color: #151618; 
+}
+
+main {
+  background-color: #556b2f;
+}
+
+
+@media (max-width: 750px) {
+  body {
+    background-color: #efe4d4; 
+  }
+  
+  main {
+    background-color: #b07946; 
+  }
+
+  /* Adjust the logo size for small screens */
+  .responsive-logo {
+    width: 60px; 
+  }
+}
+
+/* Responsive image styling for all images */
+.responsive {
+  max-width: 100%; 
+  height: auto;
+}
+
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+  p {
+    font-size: 28px;
+    font-weight: bold
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+
+  
+/* center captions */
+figcaption{
+  text-align: center;
+}
+
+
+/* Styling the navigation links */
+nav a {
+  color: #027500; 
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+nav a:hover {
+  color: #FF5733; 
+}
+
+nav a:visited {
+  color: #fa0404; 
+}
+
+nav a:active {
+  color: #900C3F; 
+}
+
