@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> Chez Fur </title>
-<link rel="stylesheet" href="root/css/Contact.css">
+    <title>Chez Fur</title>
+    <link rel="stylesheet" href="root/css/Contact.css">
 </head>
-<body>
-
+<body onload="displayWelcomeMessage()">
 
 <header>
-<h1>Chez Fur</h1>
-
-<h3>by Jonathan Villalobos</h3>
+    <h1>Chez Fur</h1>
+    <h3>by Jonathan Villalobos</h3>
 </header>
+
 <ul>
-    <li><a href ="index.html">Home</a></li>
-    <li><a href ="Menu.html">Menu</a></li>
-    <li><a href ="DW Host.html">Your Host</a></li>
-    <li><a href ="Contact.html">Contact</a></li>
-    <li><a href ="Adoptions.html">Adoption Page</a></li>
-    </ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Menu.html">Menu</a></li>
+    <li><a href="DW Host.html">Your Host</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="Adoptions.html">Adoption Page</a></li>
+</ul>
+
+<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+    <label for="contact">Preferred contact</label>
+    <select id="contact" name="contact">
+        <option value="email" selected>Email me</option>
+        <option value="1pm-4pm">Phone me between 1pm - 4pm</option>
+        <option value="6pm-9pm">Phone me between 6pm - 9pm</option>
+    </select>
+    
+    <label for="concern">Question or Concern?</label>
+    <textarea id="concern" name="concern"></textarea>
+
+    <input type="submit" value="Send Now!">
+</form>
+
+<footer>
+    <p id="date"></p>
+    <script>
+        document.getElementById("date").textContent = new Date().toLocaleDateString();
+    </script>
+</footer>
 
 <p>Copyright 2024 Jonathan Villalobos</p>
 <p>Contact me at: <a href="mailto:Jonathan@Villalobos.com">Jonathan@Villalobos.com</a></p>
+
+<!-- Link to the JavaScript file for the welcome message -->
+<script src="script.js"></script>
 
 </body>
 </html>
